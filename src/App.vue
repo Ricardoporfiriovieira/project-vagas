@@ -1,8 +1,5 @@
 <template>
-  <Top @EventPublicarVaga="acao($event)" @EventHome="acao($event)" ></Top>
-  <!-- <Content>
-  </Content> -->
-  <!-- <Home></Home> -->
+  <Top @RenderPublicarVaga="changeComponentToRenderize($event)" @RenderHome="changeComponentToRenderize($event)" ></Top>
 
   <component 
   :is="conteudo"
@@ -12,25 +9,23 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 import Top from './components/layouts/Top.vue'
 import Content from './components/layouts/Content.vue'
 import Home from '@/components/views/Home.vue'
-import PublicarVagas from '@/components/views/PublicarVagas.vue'
+import PublicarVaga from '@/components/views/PublicarVaga.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
     Top,
     Content,
     Home,
-    PublicarVagas,
+    PublicarVaga,
   },
   methods: {
-    acao(e){
-      this.conteudo = `${e.screen}`
+    changeComponentToRenderize(e){
+      this.conteudo = `${e.ComponentToRender}`
     }
   },
   data: () => ({

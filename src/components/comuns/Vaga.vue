@@ -10,8 +10,8 @@
         <div class="card-footer text-muted">
             {{ salario }} |
             {{ modalidade  }} |
-            {{  tipo  }} |
-            {{  publicacao  }} 
+            {{  tipo  }} 
+            {{  publicacao  }}
         </div>
     </div>
 </template>
