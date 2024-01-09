@@ -17,14 +17,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" @click="renderPagePublicarVaga()">Publicar Vaga</a>
                     </li>
+                    <!-- <li>
+                        <FavoritarVagas></FavoritarVagas>
+                    </li> -->
                 </ul>
 
             </div>
         </div>
+        
     </nav>
+    
 </template>
 
 <script>
+
+    import FavoritarVagas from "@/components/comuns/FavoritarVagas.vue"
+
     export default {
         methods: {
             renderPageHome() {
@@ -40,6 +48,9 @@
                 )
             }
         },
+        components: {
+            FavoritarVagas,
+        }
     }
 
 </script>
