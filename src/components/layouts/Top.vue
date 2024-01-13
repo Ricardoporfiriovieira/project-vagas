@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<!-- eslint-disable vue/no-unused-components -->
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 

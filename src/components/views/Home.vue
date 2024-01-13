@@ -1,4 +1,6 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
+    <FavoritarVagas></FavoritarVagas>
     <div class="container py-4">
         <div class="row">
             <div class="col">
@@ -42,12 +44,14 @@
     import PesquisarVagas from '@/components/comuns/PesquisarVagas.vue'
     import CardIndicador from '@/components/comuns/CardIndicador.vue'
     import Vaga from '@/components/comuns/Vaga.vue'
+    import FavoritarVagas from '@/components/comuns/FavoritarVagas.vue'
 
     export default {
         components: {
             PesquisarVagas,
             CardIndicador,
             Vaga,
+            FavoritarVagas,
         },
 
         computed:{
@@ -57,7 +61,6 @@
 
             vagas(){
                 let vagas = []
-
                 let i;
 
                 for(i = 1; i <= localStorage.length; i++){

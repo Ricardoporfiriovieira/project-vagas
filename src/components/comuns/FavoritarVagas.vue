@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="FavoritarVagas">
         <button
             class="btn btn-primary"
             type="button"
@@ -42,6 +42,12 @@
 
 </script>
 
-<style>
+<style scoped>
+
+.FavoritarVagas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 </style>
